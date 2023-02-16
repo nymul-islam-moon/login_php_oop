@@ -16,7 +16,7 @@
                         <h4>Register Form</h4>
                     </div>
                     <div class="card-body">
-                        <form class="row g-3">
+                        <form class="row g-3" action="includes/signup.inc.php" method="POST">
                             <div class="col-md-6">
                                 <label for="inputName4" class="form-label">Name</label>
                                 <input type="text" class="form-control" name="full_name" id="inputNamel4">
@@ -29,14 +29,22 @@
                                 <label for="inputEmail4" class="form-label">Email</label>
                                 <input type="email" class="form-control" name="email" id="inputEmail4">
                             </div>
-                            <div class="col-md-6">
-                                <label for="inputPassword4" class="form-label">Password</label>
-                                <input type="password" class="form-control" name="password" id="inputPassword4">
-                            </div>
+
                             <div class="col-12">
                                 <label for="inputAddress" class="form-label">Address</label>
                                 <input type="text" class="form-control" name="address" id="inputAddress" placeholder="1234 Main St">
                             </div>
+
+                            <div class="col-md-6">
+                                <label for="inputPassword4" class="form-label">Password</label>
+                                <input type="password" class="form-control" name="password" id="inputPassword4">
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="inputPassword4" class="form-label">Confirm Password</label>
+                                <input type="password" class="form-control" name="confirm_password" id="inputPassword4">
+                            </div>
+                            
                             <div class="col-md-6">
                                 <label for="inputCity" class="form-label">City</label>
                                 <input type="text" class="form-control" name="city" id="inputCity">
